@@ -10,11 +10,11 @@
     <div class="w-[500px] m-3 border border-black">
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">N</span>
-        <span>新品、未使用品 製造から2年以内の商品</span>
+        <span>新品、未使用品　製造から1年以内の商品</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">NS</span>
-        <span>新品、未使用品 製造から2年以上経過、又は製造年が不明な商品</span>
+        <span>新品、未使用品　製造から2年以上経過、または製造年が不明な商品</span>
       </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">S</span>
@@ -22,27 +22,23 @@
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">A</span>
-        <span>数回使用程度の美品</span>
+        <span>若干の小キズがあるが全体的に非常にきれい</span>
       </div>
       <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">AB</span>
-        <span>若干の小傷又はシミがあるが全体的には状態が良い</span>
+        <span>新品仕上げ加工を施せばＡ又はＳランクになる商品</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">B</span>
-        <span>一般的な中古品で全体的に使用感がある</span>
+        <span>ベルトの垂れ、ガラス傷等がある商品</span>
       </div>
       <div class="px-1 bg-slate-300">
-        <span class="inline-block py-2 font-bold">BC</span>
-        <span>全体的に強い使用感がある</span>
+        <span class="inline-block py-2 font-bold">C</span>
+        <span>文字盤やガラス等に深いキズ、シミがある</span>
       </div>
       <div class="px-1">
-        <span class="inline-block py-2 font-bold">C</span>
-        <span>強い使用感あり　劣化や大きい汚れなどがある</span>
-      </div>
-      <div class="px-1 bg-slate-300">
         <span class="inline-block py-2 font-bold">D</span>
-        <span>欠品、故障有り</span>
+        <span>ジャンク品、故障有り</span>
       </div>
     </div>
 
