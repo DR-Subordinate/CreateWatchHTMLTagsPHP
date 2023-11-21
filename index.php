@@ -72,58 +72,54 @@
               <input type="text" name="product-name" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">ライン</p>
-              <textarea name="line" cols="40" rows="2" class="border border-black"></textarea>
+              <p class="font-bold">文字盤</p>
+              <input type="text" name="dial" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">素材</p>
-              <textarea name="material" cols="40" rows="2" class="border border-black"></textarea>
-            </div>
-            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">型番</p>
               <textarea name="model-number" cols="40" rows="2" class="border border-black"></textarea>
             </div>
+            <div class="p-1 border-b border-black bg-slate-300">
+              <p class="font-bold">シリアル</p>
+              <input type="text" name="serial" size="40" class="border border-black">
+            </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">製造番号</p>
-              <textarea name="serial-number" cols="40" rows="2" class="border border-black"></textarea>
+              <p class="font-bold">素材</p>
+              <input type="text" name="material" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">カラー</p>
-              <textarea name="color" cols="40" rows="2" class="border border-black"></textarea>
+              <input type="text" name="color" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">形状</p>
-              <textarea name="shape" cols="40" rows="2" class="border border-black"></textarea>
+              <p class="font-bold">ムーブメント</p>
+              <input type="text" name="movement" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">性別</p>
-              <textarea name="sex" cols="40" rows="2" class="border border-black"></textarea>
-            </div>
-            <div class="p-1 border-b border-black">
               <p class="font-bold">参考定価</p>
               <input type="text" name="price" size="40" class="border border-black">
             </div>
+            <div class="p-1 border-b border-black">
+              <p class="font-bold">性別</p>
+              <textarea name="sex" cols="40" rows="2" class="border border-black"></textarea>
+            </div>
             <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">サイズ</p>
-              <textarea name="size" cols="40" rows="2" class="border border-black"></textarea>
+              <p class="font-bold">日差</p>
+              <input type="text" name="daily-rate" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">重量</p>
-              <textarea name="weight" cols="40" rows="2" class="border border-black"></textarea>
+              <p class="font-bold">サイズ</p>
+              <input type="text" name="size" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">機能</p>
-              <textarea name="feature" cols="40" rows="2" class="border border-black"></textarea>
+              <input type="text" name="feature" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">収納可能アイテム	</p>
-              <textarea name="containable-item" cols="40" rows="2" class="border border-black"></textarea>
+              <p class="font-bold">付属品	</p>
+              <input type="text" name="accessory" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">付属品</p>
-              <textarea name="accessory" cols="40" rows="2" class="border border-black"></textarea>
-            </div>
-            <div class="p-1 border-b border-black">
               <p class="font-bold">状態</p>
               <select name="condition" class="border border-black">
                 <option value="N">N</option>
@@ -137,37 +133,29 @@
                 <option value="D">D</option>
               </select>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">外側</p>
-              <textarea name="outside" cols="40" rows="2" class="border border-black"></textarea>
-            </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">内側</p>
-              <textarea name="inside" cols="40" rows="2" class="border border-black"></textarea>
+              <p class="font-bold">詳細</p>
+              <textarea name="detail" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">特記</p>
-              <textarea name="special-note" cols="40" rows="2" class="border border-black"></textarea>
-            </div>
-            <div class="p-1 border-b border-black">
               <p class="font-bold">スタッフコメント</p>
               <textarea name="staff-comment" cols="40" rows="2" class="border border-black"></textarea>
             </div>
+            <div class="p-1 border-b border-black">
+              <p class="font-bold">検索キーワード</p>
+              <textarea name="search-word" cols="40" rows="2" class="border border-black"></textarea>
+            </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <input type="text" name="free-text" class="mb-1 border border-black">
-              <textarea name="free-text-content" cols="40" rows="2" class="border border-black"></textarea>
+              <input type="text" name="free-text-content" size="40" class="border border-black">
             </div>
             <div class="p-1 border-b border-black">
               <input type="text" name="free-text-2" class="mb-1 border border-black">
               <input type="text" name="free-text-content-2" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-black bg-slate-300">
               <input type="text" name="free-text-3" class="mb-1 border border-black">
               <input type="text" name="free-text-content-3" size="40" class="border border-black">
-            </div>
-            <div class="p-1 border-black">
-              <p class="font-bold">関連ワード</p>
-              <textarea name="related-word" cols="40" rows="2" class="border border-black"></textarea>
             </div>
           </div>
         </div>
