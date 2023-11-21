@@ -185,6 +185,17 @@
               </label>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
+              <p class="font-bold">銀行振込のみ</p>
+              <label>
+                <input type="radio" name="add-banner-bank" value="true">
+                <span class="mr-6">バナー追加</span>
+              </label>
+              <label>
+                <input type="radio" name="add-banner-bank" value="false" checked>
+                <span>なし</span>
+              </label>
+            </div>
+            <div class="p-1 border-b border-black">
               <p class="font-bold">発送日</p>
               <label>
                 <input type="radio" name="business-days" value="true">
@@ -195,51 +206,7 @@
                 <span>なし</span>
               </label>
             </div>
-            <div class="p-1 border-b border-black">
-              <p class="font-bold">ルイヴィトン</p>
-              <label>
-                <input type="radio" name="add-word" value="true">
-                <span class="mr-6">ワード追加</span>
-              </label>
-              <label>
-                <input type="radio" name="add-word" value="false" checked>
-                <span>なし</span>
-              </label>
-            </div>
-            <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">リングサイズ直し</p>
-              <label>
-                <input type="radio" name="change-ring-size" value="true">
-                <span class="mr-6">追加</span>
-              </label>
-              <label>
-                <input type="radio" name="change-ring-size" value="false" checked>
-                <span>なし</span>
-              </label>
-            </div>
-            <div class="p-1 border-b border-black">
-              <p class="font-bold">トップのみ</p>
-              <label>
-                <input type="radio" name="add-top" value="true">
-                <span class="mr-6">追加</span>
-              </label>
-              <label>
-                <input type="radio" name="add-top" value="false" checked>
-                <span>なし</span>
-              </label>
-            </div>
-            <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">チェーンのみ</p>
-              <label>
-                <input type="radio" name="add-chain" value="true">
-                <span class="mr-6">追加</span>
-              </label>
-              <label>
-                <input type="radio" name="add-chain" value="false" checked>
-                <span>なし</span>
-              </label>
-            </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-black bg-slate-300">
               <p class="font-bold">オリコ対象</p>
               <label>
                 <input type="radio" name="more-than-5" value="true">
@@ -248,50 +215,6 @@
               <label>
                 <input type="radio" name="more-than-5" value="false" checked>
                 <span>5万以下</span>
-              </label>
-            </div>
-            <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">新品注意事項</p>
-              <label>
-                <input type="radio" name="not-used" value="true">
-                <span class="mr-6">新品・未使用</span>
-              </label>
-              <label>
-                <input type="radio" name="not-used" value="false" checked>
-                <span>中古</span>
-              </label>
-            </div>
-            <div class="p-1 border-b border-black">
-              <p class="font-bold">ラッピングバナー</p>
-              <label>
-                <input type="radio" name="add-wrapping-banner" value="true">
-                <span class="mr-6">追加</span>
-              </label>
-              <label>
-                <input type="radio" name="add-wrapping-banner" value="false" checked>
-                <span>なし</span>
-              </label>
-            </div>
-            <div class="p-1 border-b border-black bg-slate-300">
-              <p class="font-bold">ヴィトン製造国補足</p>
-              <label>
-                <input type="radio" name="show-country-of-manufacture" value="true">
-                <span class="mr-6">表示</span>
-              </label>
-              <label>
-                <input type="radio" name="show-country-of-manufacture" value="false" checked>
-                <span>なし</span>
-              </label>
-            </div>
-            <div class="p-1">
-              <p class="font-bold">エルメスカラー説明</p>
-              <label>
-                <input type="radio" name="show-hermes-color-description" value="true">
-                <span class="mr-6">表示</span>
-              </label>
-              <label>
-                <input type="radio" name="show-hermes-color-description" value="false" checked>
-                <span>なし</span>
               </label>
             </div>
           </div>
@@ -310,16 +233,9 @@
               <p class="font-bold">追加画像開始番号</p>
               <input type="text" name="start-number" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-black">
               <p class="font-bold">追加画像終了番号</p>
               <input type="text" name="end-number" class="border border-black">
-            </div>
-            <div class="p-1 bg-slate-300">
-              <p class="font-bold">ヤフーのみ</p>
-              <label>
-                <input type="checkbox" name="show-yahoo-img" value="true">
-                <span>表示する</span>
-              </label>
             </div>
           </section>
 
@@ -378,23 +294,6 @@
             <div class="py-10 px-1 bg-slate-300">
               <p class="font-bold">アイテムカテゴリURL</p>
               <input type="text" name="item-category-url" value="https://item.rakuten.co.jp/brandacross/c/0000000143/" size="50" class="border border-black">
-            </div>
-          </section>
-
-          <section class="w-[500px] mt-6 m-3 border border-black">
-            <h1 class="p-1 border-b border-black text-xl font-bold">関連商品選択(PC)</h1>
-            <div class="p-1 bg-slate-300">
-              <p class="font-bold">カテゴリ</p>
-              <select name="product-category" class="border border-black">
-                <option value="hermes">エルメス</option>
-                <option value="louis-vuitton">ヴィトン</option>
-                <option value="chanel">シャネル</option>
-                <option value="bag">バッグ</option>
-                <option value="wallet">財布</option>
-                <option value="jewelry">ジュエリー</option>
-                <option value="watch">時計</option>
-                <option value="none">無し</option>
-              </select>
             </div>
           </section>
         </div>
