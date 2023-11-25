@@ -29,16 +29,10 @@
 <td bgcolor="#EEE"><b>商品名</b></td>
 <td bgcolor="#FFF"><?php echo $_POST['product-name']; ?></td>
 </tr>
-<?php if(!empty($_POST['line'])): ?>
+<?php if(!empty($_POST['dial'])): ?>
 <tr>
-<td bgcolor="#EEE"><b>ライン</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['line']); ?></td>
-</tr>
-<?php endif; ?>
-<?php if(!empty($_POST['material'])): ?>
-<tr>
-<td bgcolor="#EEE"><b>素材</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['material']); ?></td>
+<td bgcolor="#EEE"><b>文字盤</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['dial']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['model-number'])): ?>
@@ -47,10 +41,16 @@
 <td bgcolor="#FFF"><?php echo nl2br($_POST['model-number']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['serial-number'])): ?>
+<?php if(!empty($_POST['serial'])): ?>
 <tr>
-<td bgcolor="#EEE"><b>製造番号</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['serial-number']); ?></td>
+<td bgcolor="#EEE"><b>シリアル</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['serial']); ?></td>
+</tr>
+<?php endif; ?>
+<?php if(!empty($_POST['material'])): ?>
+<tr>
+<td bgcolor="#EEE"><b>素材</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['material']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if($_POST['show-country-of-manufacture'] == "true"): ?>
@@ -71,38 +71,38 @@
 <td bgcolor="#FFF">エルメスのカラーに関して、実際の色味を表現出来ますよう、撮影・加工に尽力しておりますが、ご覧頂く環境によって異なる場合がございます。 必ずご希望のカラー名の確認をお願い致します。</td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['shape'])): ?>
+<?php if(!empty($_POST['movement'])): ?>
 <tr>
-<td bgcolor="#EEE"><b>形状</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['shape']); ?></td>
-</tr>
-<?php endif; ?>
-<?php if(!empty($_POST['sex'])): ?>
-<tr>
-<td bgcolor="#EEE"><b>性別</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['sex']); ?></td>
+<td bgcolor="#EEE"><b>ムーブメント</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['movement']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['price'])): ?>
 <tr>
 <td bgcolor="#EEE"><b>参考定価</b></td>
-<td bgcolor="#FFF"><?php echo $_POST['price']; ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['price']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['size'])): ?>
+<?php if(!empty($_POST['sex'])): ?>
 <tr>
-<td bgcolor="#EEE"><b>サイズ</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['size']); ?><?php if($_POST['change-ring-size'] == "true"): ?>
+<td bgcolor="#EEE"><b>性別</b></td>
+<td bgcolor="#FFF"><?php echo $_POST['sex']; ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
+</tr>
+<?php endif; ?>
+<?php if(!empty($_POST['daily-rate'])): ?>
+<tr>
+<td bgcolor="#EEE"><b>日差</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['daily-rate']); ?><?php if($_POST['change-ring-size'] == "true"): ?>
 <br><a href="https://item.rakuten.co.jp/brandacross/c/0000000166/">サイズ直し1サイズ無料詳しくはこちら</a>
 <br>サイズ直しをした場合返品不可となります。
 <?php endif; ?>
 </td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['weight'])): ?>
+<?php if(!empty($_POST['size'])): ?>
 <tr>
-<td bgcolor="#EEE"><b>重量</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['weight']); ?></td>
+<td bgcolor="#EEE"><b>サイズ</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['size']); ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['feature'])): ?>
@@ -111,16 +111,16 @@
 <td bgcolor="#FFF"><?php echo nl2br($_POST['feature']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['containable-item'])): ?>
-<tr>
-<td bgcolor="#EEE"><b>収納可能アイテム</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['containable-item']); ?></td>
-</tr>
-<?php endif; ?>
 <?php if(!empty($_POST['accessory'])): ?>
 <tr>
 <td bgcolor="#EEE"><b>付属品</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['accessory']); ?>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['accessory']); ?></td>
+</tr>
+<?php endif; ?>
+<?php if(!empty($_POST['detail'])): ?>
+<tr>
+<td bgcolor="#EEE"><b>詳細</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['detail']); ?>
 <?php if($_POST['add-top'] == "true"): ?>
 <br>※チェーンは付属致しません。<br>
 <a href="https://item.rakuten.co.jp/brandacross/c/0000000260/">ネックレスチェーンはこちら</a>
@@ -159,6 +159,18 @@
 <td bgcolor="#EEE"><b>スタッフコメント</b></td>
 <td bgcolor="#FFF"><?php echo nl2br($_POST['staff-comment']); ?>
 </td>
+</tr>
+<?php endif; ?>
+<?php if(!empty($_POST['search-word'])): ?>
+<tr>
+<td bgcolor="#EEE"><b>検索キーワード</b></td>
+<td bgcolor="#FFF"><?php echo $_POST['search-word']; ?></td>
+</tr>
+<?php endif; ?>
+<?php if(!empty($_POST['free-text-content'])): ?>
+<tr>
+<td bgcolor="#EEE"><b><?php echo $_POST['free-text']; ?></b></td>
+<td bgcolor="#FFF"><?php echo $_POST['free-text-content']; ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['free-text-content-2'])): ?>
@@ -204,31 +216,31 @@
 
 switch ($_POST['condition']) {
     case "N":
-        echo "新品、未使用品  製造から2年以内の商品";
+        echo "新品、未使用品　製造から1年以内の商品";
         break;
     case "NS":
-        echo "新品、未使用品 製造から2年以上経過、又は製造年が不明な商品";
+        echo "新品、未使用品　製造から2年以上経過、または製造年が不明な商品";
         break;
     case "S":
         echo "新品同様品";
         break;
     case "A":
-        echo "数回使用程度の美品";
+        echo "若干の小キズがあるが全体的に非常にきれい";
         break;
     case "AB":
-        echo "若干の小傷又はシミがあるが全体的には状態が良い";
+        echo "新品仕上げ加工を施せばＡ又はＳランクになる商品";
         break;
     case "B":
-        echo "一般的な中古品で全体的に使用感がある";
+        echo "ベルトの垂れ、ガラス傷等がある商品";
         break;
     case "BC":
         echo "全体的に強い使用感がある";
         break;
     case "C":
-        echo "強い使用感あり　劣化や大きい汚れなどがある";
+        echo "文字盤やガラス等に深いキズ、シミがある";
         break;
     case "D":
-        echo "欠品、故障有り";
+        echo "ジャンク品、故障有り";
         break;
 }
  ?>
