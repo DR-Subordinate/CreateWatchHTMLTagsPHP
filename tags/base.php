@@ -4,9 +4,16 @@
 
 ------------------------
 <?php endif; ?>
-<?php if(!empty($_POST['serial-number'])): ?>
-【製造番号】
-<?php echo str_replace(array("\n"), '', $_POST['serial-number']); ?>
+<?php if(!empty($_POST['serial'])): ?>
+【シリアル】
+<?php echo str_replace(array("\n"), '', $_POST['serial']); ?>
+
+------------------------
+<?php endif; ?>
+<?php if(!empty($_POST['material'])): ?>
+【素材】
+<?php echo str_replace(array("\n"), '
+', $_POST['material']); ?>
 
 ------------------------
 <?php endif; ?>
@@ -17,10 +24,31 @@
 
 ------------------------
 <?php endif; ?>
-<?php if(!empty($_POST['material'])): ?>
-【素　材】
+<?php if(!empty($_POST['movement'])): ?>
+【ムーブメント】
 <?php echo str_replace(array("\n"), '
-', $_POST['material']); ?>
+', $_POST['movement']); ?>
+
+------------------------
+<?php endif; ?>
+<?php if(!empty($_POST['price'])): ?>
+【参考定価】
+<?php echo str_replace(array("\n"), '
+', $_POST['price']); ?>
+
+------------------------
+<?php endif; ?>
+<?php if(!empty($_POST['sex'])): ?>
+【性別】
+<?php echo str_replace(array("\n"), '
+', $_POST['sex']); ?>
+
+------------------------
+<?php endif; ?>
+<?php if(!empty($_POST['daily-rate'])): ?>
+【日差】
+<?php echo str_replace(array("\n"), '
+', $_POST['daily-rate']); ?>
 
 ------------------------
 <?php endif; ?>
@@ -32,16 +60,16 @@
 ------------------------
 <?php endif; ?>
 <?php if(!empty($_POST['feature'])): ?>
-【機　能】
+【機能】
 <?php echo str_replace(array("\n"), '
 ', $_POST['feature']); ?>
 
 ------------------------
 <?php endif; ?>
-<?php if(!empty($_POST['containable-item'])): ?>
-【収納可能アイテム】
+<?php if(!empty($_POST['accessory'])): ?>
+【付属品】
 <?php echo str_replace(array("\n"), '
-', $_POST['containable-item']); ?>
+', $_POST['accessory']); ?>
 
 ------------------------
 <?php endif; ?>
@@ -51,31 +79,31 @@
 
 switch ($_POST['condition']) {
     case "N":
-        echo "（新品、未使用品  製造から2年以内の商品）";
+        echo "（新品、未使用品　製造から1年以内の商品）";
         break;
     case "NS":
-        echo "（新品、未使用品 製造から2年以上経過、又は製造年が不明な商品）";
+        echo "（新品、未使用品　製造から2年以上経過、または製造年が不明な商品）";
         break;
     case "S":
         echo "（新品同様品）";
         break;
     case "A":
-        echo "（数回使用程度の美品）";
+        echo "（若干の小キズがあるが全体的に非常にきれい）";
         break;
     case "AB":
-        echo "（若干の小傷又はシミがあるが全体的には状態が良い）";
+        echo "（新品仕上げ加工を施せばＡ又はＳランクになる商品）";
         break;
     case "B":
-        echo "（一般的な中古品で全体的に使用感がある）";
+        echo "（ベルトの垂れ、ガラス傷等がある商品）";
         break;
     case "BC":
         echo "（全体的に強い使用感がある）";
         break;
     case "C":
-        echo "（強い使用感あり　劣化や大きい汚れなどがある）";
+        echo "（文字盤やガラス等に深いキズ、シミがある）";
         break;
     case "D":
-        echo "（欠品、故障有り）";
+        echo "（ジャンク品、故障有り）";
         break;
 }
 ?>
@@ -103,9 +131,9 @@ switch ($_POST['condition']) {
 
 <?php endif; ?>
 ------------------------
-<?php if(!empty($_POST['syousai'])): ?>
+<?php if(!empty($_POST['detail'])): ?>
 【詳　細】
-<?php echo $_POST['syousai']; ?>
+<?php echo $_POST['detail']; ?>
 
 ------------------------
 <?php endif; ?>
