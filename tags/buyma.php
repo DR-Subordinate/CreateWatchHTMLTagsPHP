@@ -4,24 +4,24 @@
 
 商品名　　<?php echo $_POST['product-name']; ?>
 
-<?php if(!empty($_POST['line'])): ?>
-ライン　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['line']); ?>
-
-<?php endif; ?>
-<?php if(!empty($_POST['material'])): ?>
-素　材　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['material']); ?>
+<?php if(!empty($_POST['dial'])): ?>
+文字盤　　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['dial']); ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['model-number'])): ?>
-型　番　　<?php echo str_replace(array("\n"), '
+型番　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['model-number']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['serial-number'])): ?>
-製造番号　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['serial-number']); ?>
+<?php if(!empty($_POST['serial'])): ?>
+シリアル　　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['serial']); ?>
+
+<?php endif; ?>
+<?php if(!empty($_POST['material'])): ?>
+素材　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['material']); ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['color'])): ?>
@@ -29,28 +29,28 @@
 　　　　　', $_POST['color']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['shape'])): ?>
-形　状　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['shape']); ?>
-
-<?php endif; ?>
-<?php if(!empty($_POST['sex'])): ?>
-性　別　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['sex']); ?>
+<?php if(!empty($_POST['movement'])): ?>
+ムーブメント　　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['movement']); ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['price'])): ?>
-参考定価　<?php echo str_replace(array("\n"), '
+参考定価　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['price']); ?>円
+
+<?php endif; ?>
+<?php if(!empty($_POST['sex'])): ?>
+性別　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['sex']); ?>
+<?php endif; ?>
+<?php if(!empty($_POST['daily-rate'])): ?>
+日差　　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['daily-rate']); ?>
+
 <?php endif; ?>
 <?php if(!empty($_POST['size'])): ?>
 サイズ　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['size']); ?>
-
-<?php endif; ?>
-<?php if(!empty($_POST['weight'])): ?>
-重　量　　<?php echo str_replace(array("\n"), '
-　　　　　', $_POST['weight']); ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['feature'])): ?>
@@ -63,8 +63,8 @@
 　　　　　', $_POST['accessory']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['syousai'])): ?>
-詳　細　　<?php echo $_POST['syousai']; ?>
+<?php if(!empty($_POST['detail'])): ?>
+詳　細　　<?php echo $_POST['detail']; ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['free-text-content'])): ?>
@@ -87,8 +87,8 @@
 
 <?php endif; ?>
 
-<?php if(!empty($_POST['related-word'])): ?>
-関連ワード　<?php echo $_POST['related-word']; ?>
+<?php if(!empty($_POST['search-word'])): ?>
+検索キーワード　<?php echo $_POST['search-word']; ?>
 <?php endif; ?>
 	
 。°+°。°+　°。°。°+°。°+　°。°。°+°。
