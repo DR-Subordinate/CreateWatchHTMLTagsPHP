@@ -58,15 +58,39 @@
 </TD>
 </TR>
 <font size="3">
-<?php if(!empty($_POST['line'])): ?>
+<?php if(!empty($_POST['dial'])): ?>
 </font>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">ライン</font>
+<font size="3">文字盤</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['line']); ?>
+<?php echo nl2br($_POST['dial']); ?>
+</font>
+</TD>
+</TR>
+<?php endif; ?>
+<?php if(!empty($_POST['model-number'])): ?>
+<TR>
+<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
+<font size="3">型番</font>
+</TD>
+<TD BGCOLOR=#ffffff>
+<font size="3">
+<?php echo nl2br($_POST['model-number']); ?>
+</font>
+</TD>
+</TR>
+<?php endif; ?>
+<?php if(!empty($_POST['serial'])): ?>
+<TR>
+<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
+<font size="3">シリアル</font>
+</TD>
+<TD BGCOLOR=#ffffff>
+<font size="3">
+<?php echo nl2br($_POST['serial']); ?>
 </font>
 </TD>
 </TR>
@@ -83,30 +107,6 @@
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['model-number'])): ?>
-<TR>
-<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">型　番</font>
-</TD>
-<TD BGCOLOR=#ffffff>
-<font size="3">
-<?php echo nl2br($_POST['model-number']); ?>
-</font>
-</TD>
-</TR>
-<?php endif; ?>
-<?php if(!empty($_POST['serial-number'])): ?>
-<TR>
-<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">製造番号</font>
-</TD>
-<TD BGCOLOR=#ffffff>
-<font size="3">
-<?php echo nl2br($_POST['serial-number']); ?>
-</font>
-</TD>
-</TR>
-<?php endif; ?>
 <?php if(!empty($_POST['color'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
@@ -119,10 +119,21 @@
 </TD>
 </TR>
 <?php endif; ?>
+<?php if(!empty($_POST['movement'])): ?>
+<TR>
+<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
+<font size="3">ムーブメント</font>
+</TD>
+<TD BGCOLOR=#ffffff>
+<font size="3">
+<?php echo $_POST['movement']; ?>円</font>
+</TD>
+</TR>
+<?php endif; ?>
 <?php if(!empty($_POST['price'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">定　価</font>
+<font size="3">参考定価</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
@@ -130,14 +141,27 @@
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['ackakaku'])): ?>
+<?php if(!empty($_POST['sex'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">ACROSS通常価格</font>
+<font size="3">性別</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo $_POST['ackakaku']; ?>円</font>
+<?php echo nl2br($_POST['sex']); ?>
+</font>
+</TD>
+</TR>
+<?php endif; ?>
+<?php if(!empty($_POST['daily-rate'])): ?>
+<TR>
+<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
+<font size="3">日差</font>
+</TD>
+<TD BGCOLOR=#ffffff>
+<font size="3">
+<?php echo nl2br($_POST['daily-rate']); ?>
+</font>
 </TD>
 </TR>
 <?php endif; ?>
@@ -148,22 +172,7 @@
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['size']); ?><br>
-<?php if($_POST['change-ring-size'] == "true"): ?>
-<a href="https://image.rakuten.co.jp/brandacross/cabinet/150714_ring2.jpg"><font size="2">サイズ直し1サイズ無料詳しくはこちら</font></a>
-<?php endif; ?>
-</font>
-</TD>
-</TR>
-<?php endif; ?>
-<?php if(!empty($_POST['weight'])): ?>
-<TR>
-<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">重量</font>
-</TD>
-<TD BGCOLOR=#ffffff>
-<font size="3">
-<?php echo nl2br($_POST['weight']); ?>
+<?php echo nl2br($_POST['size']); ?>
 </font>
 </TD>
 </TR>
@@ -171,7 +180,7 @@
 <?php if(!empty($_POST['feature'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">機　能</font>
+<font size="3">機能</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
@@ -228,14 +237,14 @@
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['syousai'])): ?>
+<?php if(!empty($_POST['detail'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
 <font size="3">詳　細</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['syousai']); ?>
+<?php echo nl2br($_POST['detail']); ?>
 </font>
 </TD>
 </TR>
@@ -249,6 +258,19 @@
 <TD BGCOLOR=#ffffff>
 <font size="3">
 <?php echo nl2br($_POST['staff-comment']); ?>
+</font>
+</TD>
+</TR>
+<?php endif; ?>
+<?php if(!empty($_POST['search-word'])): ?>
+<TR>
+<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
+<font size="3">検索キーワード
+</font>
+</TD>
+<TD BGCOLOR=#ffffff>
+<font size="3">
+<?php echo nl2br($_POST['search-word']); ?>
 </font>
 </TD>
 </TR>
@@ -337,7 +359,7 @@
 </TD>
 <TD BGCOLOR=#ffffff WIDTH=45%>
 
-<font size="2">【N】 ：新品、未使用品  製造から2年以内の商品<br>【NS】：新品、未使用品 製造から2年以上経過、又は製造年が不明な商品<br>【S】 ：新品同様品<br>【A】 ：数回使用程度の美品<br>【AB】 ：若干の小傷又はシミがあるが全体的には状態が良い<br>【B】 ：一般的な中古品で全体的に使用感がある<br>【BC】：全体的に強い使用感がある<br>【C】 ：強い使用感あり　劣化や大きい汚れなどがある<br>【D】 ：欠品、故障有り<br>
+<font size="2">【N】 ：新品、未使用品　製造から1年以内の商品<br>【NS】：新品、未使用品　製造から2年以上経過、または製造年が不明な商品<br>【S】 ：新品同様品<br>【A】 ：若干の小キズがあるが全体的に非常にきれい<br>【AB】 ：新品仕上げ加工を施せばＡ又はＳランクになる商品<br>【B】 ：ベルトの垂れ、ガラス傷等がある商品<br>【BC】：全体的に強い使用感がある<br>【C】 ：文字盤やガラス等に深いキズ、シミがある<br>【D】 ：ジャンク品、故障有り<br>
 
 </TD>
 </tr>
