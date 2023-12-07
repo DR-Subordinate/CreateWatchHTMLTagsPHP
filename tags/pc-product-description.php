@@ -23,7 +23,7 @@
 <th>商品名</th>
 <td><?php echo $_POST['product-name']; ?></td>
 </tr>
-<?php if(!empty($_POST['line'])): ?>
+<?php if(!empty($_POST['dial'])): ?>
 <tr>
 <th>文字盤</th>
 <td><?php echo nl2br($_POST['dial']); ?></td>
