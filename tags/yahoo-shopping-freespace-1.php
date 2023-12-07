@@ -85,7 +85,7 @@
 <?php if(!empty($_POST['price'])): ?>
 <tr>
 <th width="25%" bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">参考定価</th>
-<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['price']); ?></td>
+<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['price']); ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
 </tr>
 <?php endif; ?>
 
@@ -93,7 +93,7 @@
 <?php if(!empty($_POST['sex'])): ?>
 <tr>
 <th width="25%" bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">性別</th>
-<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['sex']); ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
+<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['sex']); ?></td>
 </tr>
 <?php endif; ?>
 
