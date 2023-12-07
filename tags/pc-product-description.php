@@ -29,13 +29,13 @@
 <td><?php echo nl2br($_POST['dial']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['material'])): ?>
+<?php if(!empty($_POST['model-number'])): ?>
 <tr>
 <th>型番</th>
 <td><?php echo nl2br($_POST['model-number']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['model-number'])): ?>
+<?php if(!empty($_POST['serial'])): ?>
 <tr>
 <th>シリアル</th>
 <td><?php echo nl2br($_POST['serial']); ?></td>
