@@ -10,7 +10,7 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['model-number'])): ?>
-型番　　<?php echo str_replace(array("\n"), '
+型　番　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['model-number']); ?>
 
 <?php endif; ?>
@@ -20,7 +20,7 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['material'])): ?>
-素材　<?php echo str_replace(array("\n"), '
+素　材　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['material']); ?>
 
 <?php endif; ?>
@@ -40,11 +40,12 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['sex'])): ?>
-性別　<?php echo str_replace(array("\n"), '
+性　別　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['sex']); ?>
+
 <?php endif; ?>
 <?php if(!empty($_POST['daily-rate'])): ?>
-日差　　<?php echo str_replace(array("\n"), '
+日　差　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['daily-rate']); ?>
 
 <?php endif; ?>
