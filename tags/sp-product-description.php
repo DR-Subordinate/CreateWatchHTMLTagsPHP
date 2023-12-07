@@ -80,13 +80,13 @@
 <?php if(!empty($_POST['price'])): ?>
 <tr>
 <td bgcolor="#EEE"><b>参考定価</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['price']); ?></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['price']); ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['sex'])): ?>
 <tr>
 <td bgcolor="#EEE"><b>性別</b></td>
-<td bgcolor="#FFF"><?php echo $_POST['sex']; ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
+<td bgcolor="#FFF"><?php echo $_POST['sex']; ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['daily-rate'])): ?>
