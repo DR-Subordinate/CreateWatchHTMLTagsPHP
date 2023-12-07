@@ -74,13 +74,13 @@
 <?php if(!empty($_POST['price'])): ?>
 <tr>
 <th>参考定価</th>
-<td><?php echo nl2br($_POST['price']); ?></td>
+<td><?php echo nl2br($_POST['price']); ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['sex'])): ?>
 <tr>
 <th>性別</th>
-<td><?php echo $_POST['sex']; ?>円<br>※参考定価は各ブランド直営店にて新品で販売中もしくは過去に販売されていた価格です。</td>
+<td><?php echo $_POST['sex']; ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['daily-rate'])): ?>
