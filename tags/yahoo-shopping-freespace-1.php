@@ -26,7 +26,7 @@
 <td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo $_POST['product-name']; ?></td>
 </tr>
 
-<?php if(!empty($_POST['line'])): ?>
+<?php if(!empty($_POST['dial'])): ?>
 <tr>
 <th width="25%" bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">文字盤</th>
 <td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['dial']); ?></td>
