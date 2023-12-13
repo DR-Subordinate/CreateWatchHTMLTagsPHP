@@ -81,15 +81,15 @@
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">シリアル</p>
-              <input type="text" name="serial" size="40" class="border border-black">
+              <textarea name="serial" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
               <p class="font-bold">素材</p>
-              <input type="text" name="material" size="40" class="border border-black">
+              <textarea name="material" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">カラー</p>
-              <input type="text" name="color" size="40" class="border border-black">
+              <textarea name="color" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
               <p class="font-bold">ムーブメント</p>
@@ -105,19 +105,19 @@
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">日差</p>
-              <input type="text" name="daily-rate" size="40" class="border border-black">
+              <textarea name="daily-rate" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
               <p class="font-bold">サイズ</p>
-              <input type="text" name="size" size="40" class="border border-black">
+              <textarea name="size" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">機能</p>
-              <input type="text" name="feature" size="40" class="border border-black">
+              <textarea name="feature" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
               <p class="font-bold">付属品	</p>
-              <input type="text" name="accessory" size="40" class="border border-black">
+              <textarea name="accessory" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">状態</p>
