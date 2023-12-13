@@ -106,12 +106,6 @@
 <td><?php echo nl2br($_POST['feature']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['accessory'])): ?>
-<tr>
-<th>付属品</th>
-<td><?php echo nl2br($_POST['accessory']); ?></td>
-</tr>
-<?php endif; ?>
 
 <?php if(!empty($_POST['accessory'])): ?>
 <tr>
