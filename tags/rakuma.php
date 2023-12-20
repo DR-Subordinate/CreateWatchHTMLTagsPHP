@@ -37,7 +37,6 @@
 <?php if(!empty($_POST['price'])): ?>
 参考定価　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['price']); ?>円
-
 <?php endif; ?>
 <?php if(!empty($_POST['sex'])): ?>
 性　別　　<?php echo str_replace(array("\n"), '
