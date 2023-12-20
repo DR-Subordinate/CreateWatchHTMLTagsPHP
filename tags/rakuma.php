@@ -15,7 +15,7 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['serial'])): ?>
-シリアル　　<?php echo str_replace(array("\n"), '
+シリアル　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['serial']); ?>
 
 <?php endif; ?>
@@ -44,7 +44,7 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['daily-rate'])): ?>
-日　差　　<?php echo str_replace(array("\n"), '
+日　差　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['daily-rate']); ?>
 
 <?php endif; ?>
