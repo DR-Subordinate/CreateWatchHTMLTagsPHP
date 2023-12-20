@@ -82,8 +82,8 @@
 　　　　　', $_POST['special-note']); ?>
 
 <?php endif; ?>
-<?php if(!empty($_POST['syousai'])): ?>
-詳　細　　<?php echo $_POST['syousai']; ?>
+<?php if(!empty($_POST['detail'])): ?>
+詳　細　　<?php echo $_POST['detail']; ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['free-text-content'])): ?>
