@@ -117,39 +117,6 @@
 <td bgcolor="#FFF"><?php echo nl2br($_POST['accessory']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['detail'])): ?>
-<tr>
-<td bgcolor="#EEE"><b>詳細</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['detail']); ?>
-<?php if($_POST['add-top'] == "true"): ?>
-<br>※チェーンは付属致しません。<br>
-<a href="https://item.rakuten.co.jp/brandacross/c/0000000260/">ネックレスチェーンはこちら</a>
-<?php endif; ?>
-<?php if($_POST['add-chain'] == "true"): ?>
-<br>
-<a href="https://item.rakuten.co.jp/brandacross/c/0000000261/">ペンダントトップはこちら</a>
-<?php endif; ?>
-<br><br>写真・説明欄に表記されている付属品以外は付属しておりません。
-</td>
-</tr>
-<?php elseif($_POST['add-top'] == "true"): ?>
-<tr>
-<td bgcolor="#EEE"><b>付属品</b></td>
-<td bgcolor="#FFF">
-<?php if($_POST['add-top'] == "true"): ?>
-※チェーンは付属致しません。<br>
-<a href="https://item.rakuten.co.jp/brandacross/c/0000000260/">ネックレスチェーンはこちら</a>
-<?php endif; ?>
-</td>
-</tr>
-<?php elseif($_POST['add-chain'] == "true"): ?>
-<tr>
-<td bgcolor="#EEE"><b>付属品</b></td>
-<td bgcolor="#FFF">
-<a href="https://item.rakuten.co.jp/brandacross/c/0000000261/">ペンダントトップはこちら</a>
-</td>
-</tr>
-<?php endif; ?>
 
 
 
@@ -266,10 +233,10 @@ switch ($_POST['condition']) {
 <td bgcolor="#FFF"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['syousai'])): ?>
+<?php if(!empty($_POST['detail'])): ?>
 <tr>
 <td bgcolor="#EEE"><b>詳細</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['syousai']); ?></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['detail']); ?></td>
 </tr>
 <?php endif; ?>
 </table>
