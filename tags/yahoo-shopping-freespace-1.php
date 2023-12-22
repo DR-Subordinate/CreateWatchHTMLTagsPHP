@@ -130,14 +130,6 @@
 
 
 
-<?php if(!empty($_POST['detail'])): ?>
-<tr>
-<th width="25%" bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">詳細</th>
-<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['detail']); ?>
-</td>
-</tr>
-<?php endif; ?>
-
 <?php if(!empty($_POST['staff-comment'])): ?>
 <tr>
 <th width="25%" bgcolor="#EBE8D7" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">スタッフコメント</th>
@@ -233,10 +225,10 @@ switch ($_POST['condition']) {
 <td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['syousai'])): ?>
+<?php if(!empty($_POST['detail'])): ?>
 <tr>
-<th style="text-align:center;border:#dddddd solid 1px;">詳細</th>
-<td style="border:#dddddd solid 1px;"><?php echo nl2br($_POST['syousai']); ?></td>
+<th width="25%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">詳細</th>
+<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['detail']); ?></td>
 </tr>
 <?php endif; ?>
 </table>
