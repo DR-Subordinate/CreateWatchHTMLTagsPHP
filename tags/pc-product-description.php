@@ -141,13 +141,6 @@
 
 
 
-<?php if(!empty($_POST['detail'])): ?>
-<tr>
-<th>詳細</th>
-<td><?php echo nl2br($_POST['detail']); ?>
-</td>
-</tr>
-<?php endif; ?>
 <?php if(!empty($_POST['staff-comment'])): ?>
 <tr>
 <th>スタッフコメント</th>
@@ -236,10 +229,10 @@ switch ($_POST['condition']) {
 <td><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['syousai'])): ?>
+<?php if(!empty($_POST['detail'])): ?>
 <tr>
 <th>詳細</th>
-<td><?php echo nl2br($_POST['syousai']); ?></td>
+<td><?php echo nl2br($_POST['detail']); ?></td>
 </tr>
 <?php endif; ?>
 </table>
