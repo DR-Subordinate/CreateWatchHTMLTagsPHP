@@ -35,7 +35,7 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['price'])): ?>
-参考定価　　<?php echo str_replace(array("\n"), '
+参考定価　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['price']); ?>円
 <?php endif; ?>
 <?php if(!empty($_POST['sex'])): ?>
@@ -44,7 +44,7 @@
 
 <?php endif; ?>
 <?php if(!empty($_POST['daily-rate'])): ?>
-日　差　<?php echo str_replace(array("\n"), '
+日　差　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['daily-rate']); ?>
 
 <?php endif; ?>
