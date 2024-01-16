@@ -82,3 +82,5 @@ border:solid 4px #999999;
 <?php if($pcCatName != "none"): ?>
 <iframe src="https://www.rakuten.ne.jp/gold/brandacross/iframe/item_bottom/<?php echo $pcCatName; ?>.html" style="margin-top:30px;" width="630" height="1300" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" hspace="0" vspace="0">専用ブラウザでご覧下さい</iframe>
 <?php endif; ?>
+
+<iframe src="https://www.rakuten.ne.jp/gold/brandacross/iframe/item_bottom/watch.html" style="margin-top:30px;" width="630" height="1300" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" hspace="0" vspace="0">専用ブラウザでご覧下さい</iframe>
