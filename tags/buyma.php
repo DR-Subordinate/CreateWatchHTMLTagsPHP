@@ -64,6 +64,42 @@
 　　　　　', $_POST['accessory']); ?>
 
 <?php endif; ?>
+<?php if(!empty($_POST['condition'])): ?>
+状態　　<?php echo $_POST['condition']; ?>　　<?php endif; ?>
+<?php 
+
+switch ($_POST['condition']) {
+    case "N":
+        echo "（新品、未使用品　製造から1年以内の商品）";
+        break;
+    case "NS":
+        echo "（新品、未使用品　製造から2年以上経過、または製造年が不明な商品）";
+        break;
+    case "S":
+        echo "（新品同様品）";
+        break;
+    case "A":
+        echo "（若干の小キズがあるが全体的に非常にきれい）";
+        break;
+    case "AB":
+        echo "（新品仕上げ加工を施せばＡ又はＳランクになる商品）";
+        break;
+    case "B":
+        echo "（ベルトの垂れ、ガラス傷等がある商品）";
+        break;
+    case "BC":
+        echo "（全体的に強い使用感がある）";
+        break;
+    case "C":
+        echo "（文字盤やガラス等に深いキズ、シミがある）";
+        break;
+    case "D":
+        echo "（ジャンク品、故障有り）";
+        break;
+}
+?>
+
+
 <?php if(!empty($_POST['detail'])): ?>
 詳　細　　<?php echo $_POST['detail']; ?>
 
