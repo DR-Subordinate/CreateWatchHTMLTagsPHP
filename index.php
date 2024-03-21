@@ -122,9 +122,10 @@
             <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">状態</p>
               <select name="condition" class="border border-black">
+                <option value="" selected>選択してください</option>
                 <option value="N">N</option>
                 <option value="NS">NS</option>
-                <option value="S" selected>S</option>
+                <option value="S">S</option>
                 <option value="A">A</option>
                 <option value="AB">AB</option>
                 <option value="B">B</option>
