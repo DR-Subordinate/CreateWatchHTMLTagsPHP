@@ -1,3 +1,9 @@
+<?php if(!empty($_POST['product-name'])): ?>
+【商品名】
+<?php echo $_POST['product-name']; ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['model-number'])): ?>
 【型　番】
 <?php echo str_replace(array("\n"), '', $_POST['model-number']); ?>
