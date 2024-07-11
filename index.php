@@ -139,22 +139,30 @@
               <textarea name="detail" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-slate-300">
+              <p class="font-bold">保証</p>
+              <select name="warranty" class="border border-black">
+                <option value="" selected>選択してください</option>
+                <option value="one-year">新品・未使用品　1年間</option>
+                <option value="six-months">中古品　6ヶ月</option>
+              </select>
+            </div>
+            <div class="p-1 border-b border-black">
               <p class="font-bold">スタッフコメント</p>
               <textarea name="staff-comment" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <p class="font-bold">検索キーワード</p>
               <textarea name="search-word" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black">
               <input type="text" name="free-text" class="mb-1 border border-black">
               <input type="text" name="free-text-content" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-slate-300">
               <input type="text" name="free-text-2" class="mb-1 border border-black">
               <input type="text" name="free-text-content-2" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-black bg-slate-300">
+            <div class="p-1 border-black">
               <input type="text" name="free-text-3" class="mb-1 border border-black">
               <input type="text" name="free-text-content-3" size="40" class="border border-black">
             </div>
