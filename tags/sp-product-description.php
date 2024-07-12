@@ -121,6 +121,11 @@
 
 
 
+<tr>
+<td bgcolor="#EEE"><b>
+保証</b></td>
+<td bgcolor="#FFF">ACROSS内部保証<?php echo $_POST['warranty'] == "one-year" ? "1年間" : ($_POST['warranty'] == "six-months" ? "6ヶ月" : "");?><br />保証内容は<a href="https://www.rakuten.ne.jp/gold/brandacross/watch_hosyo.html" target="_TOP">コチラ</a></td>
+</tr>
 <?php if(!empty($_POST['staff-comment'])): ?>
 <tr>
 <td bgcolor="#EEE"><b>スタッフコメント</b></td>
