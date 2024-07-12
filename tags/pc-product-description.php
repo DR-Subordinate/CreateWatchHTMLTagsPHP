@@ -141,6 +141,11 @@
 
 
 
+<tr>
+<th>保証</th>
+<td>ACROSS内部保証<?php echo $_POST['warranty'] == "one-year" ? "1年間" : ($_POST['warranty'] == "six-months" ? "6ヶ月" : "");?>
+<br />保証内容は<a href="https://item.rakuten.co.jp/brandacross/c/0000000219/" target="_TOP">コチラ</a></td>
+</tr>
 <?php if(!empty($_POST['staff-comment'])): ?>
 <tr>
 <th>スタッフコメント</th>
