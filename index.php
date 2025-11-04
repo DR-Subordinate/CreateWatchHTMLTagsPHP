@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="w-[500px] m-3 border border-black">
-      <div class="px-1 bg-slate-300">
+      <div class="px-1 bg-orange-200">
         <span class="inline-block py-2 font-bold">N</span>
         <span>新品、未使用品　製造から1年以内の商品</span>
       </div>
@@ -16,7 +16,7 @@
         <span class="inline-block py-2 font-bold">NS</span>
         <span>新品、未使用品　製造から2年以上経過、または製造年が不明な商品</span>
       </div>
-      <div class="px-1 bg-slate-300">
+      <div class="px-1 bg-orange-200">
         <span class="inline-block py-2 font-bold">S</span>
         <span>新品同様品</span>
       </div>
@@ -24,7 +24,7 @@
         <span class="inline-block py-2 font-bold">A</span>
         <span>若干の小キズがあるが全体的に非常にきれい</span>
       </div>
-      <div class="px-1 bg-slate-300">
+      <div class="px-1 bg-orange-200">
         <span class="inline-block py-2 font-bold">AB</span>
         <span>新品仕上げ加工を施せばＡ又はＳランクになる商品</span>
       </div>
@@ -32,7 +32,7 @@
         <span class="inline-block py-2 font-bold">B</span>
         <span>ベルトの垂れ、ガラス傷等がある商品</span>
       </div>
-      <div class="px-1 bg-slate-300">
+      <div class="px-1 bg-orange-200">
         <span class="inline-block py-2 font-bold">C</span>
         <span>文字盤やガラス等に深いキズ、シミがある</span>
       </div>
@@ -47,7 +47,7 @@
       <div class="md:flex">
         <div class="w-[500px] mt-6 m-3">
           <div class="border border-black">
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">詳細画像URL1</p>
               <input type="text" name="product-url" size="40" class="border border-black">
             </div>
@@ -55,7 +55,7 @@
               <p class="font-bold">詳細画像URL2</p>
               <input type="text" name="img-url" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">動画URL</p>
               <input type="text" name="video-url" size="40" class="border border-black">
             </div>
@@ -63,7 +63,7 @@
               <p class="font-bold">管理番号</p>
               <input type="text" name="management-number" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">ブランド</p>
               <input type="text" name="brand" size="40" class="border border-black">
             </div>
@@ -71,7 +71,7 @@
               <p class="font-bold">商品名</p>
               <input type="text" name="product-name" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">文字盤</p>
               <input type="text" name="dial" size="40" class="border border-black">
             </div>
@@ -79,7 +79,7 @@
               <p class="font-bold">型番</p>
               <textarea name="model-number" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">シリアル</p>
               <textarea name="serial" cols="40" rows="2" class="border border-black"></textarea>
             </div>
@@ -87,7 +87,7 @@
               <p class="font-bold">素材</p>
               <textarea name="material" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">カラー</p>
               <textarea name="color" cols="40" rows="2" class="border border-black"></textarea>
             </div>
@@ -95,7 +95,7 @@
               <p class="font-bold">ムーブメント</p>
               <input type="text" name="movement" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">参考定価</p>
               <input type="text" name="price" size="40" class="border border-black">
             </div>
@@ -103,7 +103,7 @@
               <p class="font-bold">性別</p>
               <textarea name="sex" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">日差</p>
               <textarea name="daily-rate" cols="40" rows="2" class="border border-black"></textarea>
             </div>
@@ -111,7 +111,7 @@
               <p class="font-bold">サイズ</p>
               <textarea name="size" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">機能</p>
               <textarea name="feature" cols="40" rows="2" class="border border-black"></textarea>
             </div>
@@ -119,7 +119,7 @@
               <p class="font-bold">付属品	</p>
               <textarea name="accessory" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">状態</p>
               <select name="condition" class="border border-black">
                 <option value="" selected>選択してください</option>
@@ -138,7 +138,7 @@
               <p class="font-bold">詳細</p>
               <textarea name="detail" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">保証</p>
               <select name="warranty" class="border border-black">
                 <option value="" selected>選択してください</option>
@@ -150,7 +150,7 @@
               <p class="font-bold">スタッフコメント</p>
               <textarea name="staff-comment" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">検索キーワード</p>
               <textarea name="search-word" cols="40" rows="2" class="border border-black"></textarea>
             </div>
@@ -158,7 +158,7 @@
               <input type="text" name="free-text" class="mb-1 border border-black">
               <input type="text" name="free-text-content" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <input type="text" name="free-text-2" class="mb-1 border border-black">
               <input type="text" name="free-text-content-2" size="40" class="border border-black">
             </div>
@@ -171,7 +171,7 @@
 
         <div>
           <div class="w-[500px] mt-6 m-3 border border-black">
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">返品</p>
               <label>
                 <input type="radio" name="return" value="true" checked>
@@ -193,7 +193,7 @@
                 <span>なし</span>
               </label>
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">銀行振込のみ</p>
               <label>
                 <input type="radio" name="add-banner-bank" value="true">
@@ -215,7 +215,7 @@
                 <span>なし</span>
               </label>
             </div>
-            <div class="p-1 border-black bg-slate-300">
+            <div class="p-1 border-black bg-orange-200">
               <p class="font-bold">オリコ対象</p>
               <label>
                 <input type="radio" name="more-than-5" value="true">
@@ -230,7 +230,7 @@
 
           <section class="w-[500px] mt-6 m-3 border border-black">
             <h1 class="p-1 border-b border-black text-xl font-bold">商品画像</h1>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">管理番号</p>
               <input type="text" name="img-management-number" class="border border-black">
             </div>
@@ -238,7 +238,7 @@
               <p class="font-bold">キャビネット番号</p>
               <input type="text" name="cabinet-number" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-slate-300">
+            <div class="p-1 border-b border-black bg-orange-200">
               <p class="font-bold">追加画像開始番号</p>
               <input type="text" name="start-number" class="border border-black">
             </div>
@@ -250,7 +250,7 @@
 
           <section class="w-[500px] mt-6 m-3 border border-black">
             <h1 class="p-1 border-b border-black text-xl font-bold">楽天商品詳細下リンクボタン(スマホ)</h1>
-            <div class="py-10 px-1 border-b border-black bg-slate-300">
+            <div class="py-10 px-1 border-b border-black bg-orange-200">
               <p class="font-bold">ブランドカテゴリ【自動】</p>
               <select name="brand-category" class="border border-black mr-5">
                 <option value="エルメス">エルメス</option>
@@ -282,7 +282,7 @@
               <p class="font-bold">ブランドカテゴリURL</p>
               <input type="text" name="brand-category-url" value="https://item.rakuten.co.jp/brandacross/c/0000000100/" size="50" class="border border-black">
             </div>
-            <div class="py-10 px-1 border-b border-black bg-slate-300">
+            <div class="py-10 px-1 border-b border-black bg-orange-200">
               <p class="font-bold">アイテムカテゴリ【自動】</p>
               <select name="item-category" class="border border-black mr-5">
                 <option value="バッグ">バッグ</option>
@@ -300,7 +300,7 @@
               <p class="font-bold">カテゴリNo</p>
               <input type="text" name="category-number" value="1" class="border border-black">
             </div>
-            <div class="py-10 px-1 bg-slate-300">
+            <div class="py-10 px-1 bg-orange-200">
               <p class="font-bold">アイテムカテゴリURL</p>
               <input type="text" name="item-category-url" value="https://item.rakuten.co.jp/brandacross/c/0000000143/" size="50" class="border border-black">
             </div>
