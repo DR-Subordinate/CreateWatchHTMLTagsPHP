@@ -18,7 +18,7 @@
       </div>
       <div class="px-1 bg-emerald-200">
         <span class="inline-block py-2 font-bold">SA</span>
-        <span>新品同様品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</span>
+        <span>超美品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">A</span>
