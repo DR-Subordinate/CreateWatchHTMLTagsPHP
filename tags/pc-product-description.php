@@ -68,7 +68,22 @@
 <?php if(!empty($_POST['movement'])): ?>
 <tr>
 <th>ムーブメント</th>
-<td><?php echo nl2br($_POST['movement']); ?></td>
+<td><?php
+switch ($_POST['movement']) {
+    case "manual":
+        echo "手巻き";
+        break;
+    case "automatic":
+        echo "オートマチック（自動巻き）";
+        break;
+    case "quartz":
+        echo "クオーツ（電池式）";
+        break;
+    case "spring-drive":
+        echo "スプリングドライブ";
+        break;
+}
+ ?></td>
 </tr>
 <?php endif; ?>
 <?php if(!empty($_POST['price'])): ?>
