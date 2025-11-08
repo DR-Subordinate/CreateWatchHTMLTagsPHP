@@ -93,7 +93,13 @@
             </div>
             <div class="p-1 border-b border-black">
               <p class="font-bold">ムーブメント</p>
-              <input type="text" name="movement" size="40" class="border border-black">
+              <select name="movement" class="border border-black">
+                <option value="" selected>選択してください</option>
+                <option value="manual">手巻き</option>
+                <option value="automatic">オートマチック（自動巻き）</option>
+                <option value="quartz">クオーツ（電池式）</option>
+                <option value="spring-drive">スプリングドライブ</option>
+              </select>
             </div>
             <div class="p-1 border-b border-black bg-emerald-200">
               <p class="font-bold">参考定価</p>
