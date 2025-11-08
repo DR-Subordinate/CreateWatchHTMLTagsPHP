@@ -32,8 +32,22 @@
 <?php endif; ?>
 <?php if(!empty($_POST['movement'])): ?>
 【ムーブメント】
-<?php echo str_replace(array("\n"), '
-', $_POST['movement']); ?>
+<?php
+switch ($_POST['movement']) {
+    case "manual":
+        echo "手巻き";
+        break;
+    case "automatic":
+        echo "オートマチック（自動巻き）";
+        break;
+    case "quartz":
+        echo "クオーツ（電池式）";
+        break;
+    case "spring-drive":
+        echo "スプリングドライブ";
+        break;
+}
+ ?>
 
 ------------------------
 <?php endif; ?>
