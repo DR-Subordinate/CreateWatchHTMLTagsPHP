@@ -184,50 +184,46 @@ switch ($_POST['movement']) {
 <td colspan="2" bgcolor="#fff">
 <table border="1" cellspacing="0" cellpadding="7" width="100%" bordercolor="#999">
 	<td align="center" width="11%"<?php if($_POST['condition'] == "N"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>N</td>
-	<td align="center" width="11%"<?php if($_POST['condition'] == "NS"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>NS</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "S"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>S</td>
+	<td align="center" width="11%"<?php if($_POST['condition'] == "SA"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>SA</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "A"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>A</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "AB"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>AB</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "B"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>B</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "BC"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>BC</td>
 	<td align="center" width="11%"<?php if($_POST['condition'] == "C"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>C</td>
-	<td align="center" width="11%"<?php if($_POST['condition'] == "J"):?> bgcolor="#FFF766"<?php else:?> bgcolor="#fff"<?php endif; ?>>D</td>
 </table>
 </td>
 </tr>
 <tr>
 <td bgcolor="#EEE" width="80"><center><font size="7" color="#F00"><?php echo $_POST['condition']; ?></font></center></td>
 <td>
-<font size="1">
+<font size="2">
 <?php 
 
 switch ($_POST['condition']) {
     case "N":
-        echo "新品、未使用品　製造から1年以内の商品";
-        break;
-    case "NS":
-        echo "新品、未使用品　製造から2年以上経過、または製造年が不明な商品";
+        echo '<b>新品</b><br><font size="1">※金具部分など輸送・検品の際にどうしてもついてしまう僅かなスレ傷がある場合がございます。</font>';
         break;
     case "S":
-        echo "新品同様品";
+        echo '<b>未使用品（展示品またはアウトレット商品含む）</b><br><font size="1">未使用品だが長期保管や展示により明確なダメージ等がある商品。アウトレット商品も含まれます。</font>';
+        break;
+    case "SA":
+        echo '<b>超美品</b><br><font size="1">細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</font>';
         break;
     case "A":
-        echo "若干の小キズがあるが全体的に非常にきれい";
+        echo "<b>若干の小キズがあるが全体的に非常にきれい</b>";
         break;
     case "AB":
-        echo "新品仕上げ加工を施せばＡ又はＳランクになる商品";
+        echo "<b>新品仕上げ加工を施せばＡ又はＳＡランクになる商品</b>";
         break;
     case "B":
-        echo "ベルトの垂れ、ガラス傷等がある商品";
+        echo "<b>ベルトの垂れ、ガラス傷等がある商品</b>";
         break;
     case "BC":
-        echo "全体的に強い使用感がある";
+        echo "<b>文字盤やガラス等に深いキズ、シミがある</b>";
         break;
     case "C":
-        echo "文字盤やガラス等に深いキズ、シミがある";
-        break;
-    case "D":
-        echo "ジャンク品、故障有り";
+        echo "<b>ジャンク品、故障有り</b>";
         break;
 }
  ?>
