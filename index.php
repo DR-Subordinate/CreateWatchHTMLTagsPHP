@@ -26,7 +26,7 @@
       </div>
       <div class="px-1 bg-emerald-200">
         <span class="inline-block py-2 font-bold">AB</span>
-        <span>新品仕上げ加工を施せばＡ又はＳランクになる商品</span>
+        <span>新品仕上げ加工を施せばＡ又はＳＡランクになる商品</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">B</span>
