@@ -126,7 +126,22 @@
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo $_POST['movement']; ?>円</font>
+<?php
+switch ($_POST['movement']) {
+    case "manual":
+        echo "手巻き";
+        break;
+    case "automatic":
+        echo "オートマチック（自動巻き）";
+        break;
+    case "quartz":
+        echo "クオーツ（電池式）";
+        break;
+    case "spring-drive":
+        echo "スプリングドライブ";
+        break;
+}
+ ?></font>
 </TD>
 </TR>
 <?php endif; ?>
