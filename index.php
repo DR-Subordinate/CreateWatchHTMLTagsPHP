@@ -10,15 +10,15 @@
     <div class="w-[500px] m-3 border border-black">
       <div class="px-1 bg-emerald-200">
         <span class="inline-block py-2 font-bold">N</span>
-        <span>新品、未使用品　製造から1年以内の商品</span>
+        <span>新品※金具部分など輸送・検品の際にどうしてもついてしまう僅かなスレ傷がある場合がございます。</span>
       </div>
       <div class="px-1">
-        <span class="inline-block py-2 font-bold">NS</span>
-        <span>新品、未使用品　製造から2年以上経過、または製造年が不明な商品</span>
+        <span class="inline-block py-2 font-bold">S</span>
+        <span>未使用品（展示品またはアウトレット商品含む）​ 未使用品だが長期保管や展示により明確なダメージ等がある商品。アウトレット商品も含まれます。</span>
       </div>
       <div class="px-1 bg-emerald-200">
-        <span class="inline-block py-2 font-bold">S</span>
-        <span>新品同様品</span>
+        <span class="inline-block py-2 font-bold">SA</span>
+        <span>新品同様品 細かなあまり目立たないダメージがある程度の新品同様に奇麗なUSED商品</span>
       </div>
       <div class="px-1">
         <span class="inline-block py-2 font-bold">A</span>
@@ -33,11 +33,11 @@
         <span>ベルトの垂れ、ガラス傷等がある商品</span>
       </div>
       <div class="px-1 bg-emerald-200">
-        <span class="inline-block py-2 font-bold">C</span>
+        <span class="inline-block py-2 font-bold">BC</span>
         <span>文字盤やガラス等に深いキズ、シミがある</span>
       </div>
       <div class="px-1">
-        <span class="inline-block py-2 font-bold">D</span>
+        <span class="inline-block py-2 font-bold">C</span>
         <span>ジャンク品、故障有り</span>
       </div>
     </div>
@@ -130,14 +130,13 @@
               <select name="condition" class="border border-black">
                 <option value="" selected>選択してください</option>
                 <option value="N">N</option>
-                <option value="NS">NS</option>
                 <option value="S">S</option>
+                <option value="SA">SA</option>
                 <option value="A">A</option>
                 <option value="AB">AB</option>
                 <option value="B">B</option>
                 <option value="BC">BC</option>
                 <option value="C">C</option>
-                <option value="D">D</option>
               </select>
             </div>
             <div class="p-1 border-b border-black">
