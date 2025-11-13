@@ -163,8 +163,25 @@ switch ($_POST['movement']) {
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['sex']); ?>
-</font>
+<?php
+switch ($_POST['sex']) {
+    case "ladies-mens":
+        echo "レディース / メンズ";
+        break;
+    case "mens-ladies":
+        echo "メンズ / レディース";
+        break;
+    case "ladies":
+        echo "レディース";
+        break;
+    case "mens":
+        echo "メンズ";
+        break;
+    case "kids":
+        echo "キッズ";
+        break;
+}
+ ?></font>
 </TD>
 </TR>
 <?php endif; ?>
