@@ -118,7 +118,7 @@
               <textarea name="size" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-emerald-200">
-              <p class="font-bold">機能</p>
+              <p class="font-bold">機能<label class="ml-7 font-normal">日常生活防水<input type="checkbox" name="water-resistant"></label><label class="ml-7 font-normal">サファイアクリスタル風防<input type="checkbox" name="sapphire-crystal"></label><label class="ml-7 font-normal">クロノグラフ<input type="checkbox" name="chronograph"></label><label class="ml-7 font-normal">デイト表示<input type="checkbox" name="date-display"></label></p>
               <textarea name="feature" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
@@ -441,6 +441,59 @@
       itemCategoryBtn.addEventListener("click", () => {
         categoryNumber.value = "";
         itemCategoryURL.value = "";
+      });
+
+      function appendText(targetTextarea, text) {
+        if (!targetTextarea.value.includes(text)) {
+          targetTextarea.value += targetTextarea.value.trim() === "" ? text : "\n" + text;
+        }
+      }
+
+      function removeText(targetTextarea, text) {
+        targetTextarea.value = targetTextarea.value
+          .replace("\n" + text, "")
+          .replace(text, "");
+        }
+
+      const waterResistantCheckbox = document.querySelector('input[name="water-resistant"]');
+      const featureTextarea = document.querySelector('textarea[name="feature"]');
+      const waterResistantText = "日常生活防水";
+      waterResistantCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(featureTextarea, waterResistantText);
+        } else {
+          removeText(featureTextarea, waterResistantText);
+        }
+      });
+
+      const sapphireCrystalCheckbox = document.querySelector('input[name="sapphire-crystal"]');
+      const sapphireCrystalText = "サファイアクリスタル風防";
+      sapphireCrystalCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(featureTextarea, sapphireCrystalText);
+        } else {
+          removeText(featureTextarea, sapphireCrystalText);
+        }
+      });
+
+      const chronographCheckbox = document.querySelector('input[name="chronograph"]');
+      const chronographText = "クロノグラフ";
+      chronographCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(featureTextarea, chronographText);
+        } else {
+          removeText(featureTextarea, chronographText);
+        }
+      });
+
+      const dateDisplayCheckbox = document.querySelector('input[name="date-display"]');
+      const dateDisplayText = "デイト表示";
+      dateDisplayCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(featureTextarea, dateDisplayText);
+        } else {
+          removeText(featureTextarea, dateDisplayText);
+        }
       });
     </script>
   </body>
