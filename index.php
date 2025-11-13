@@ -122,7 +122,7 @@
               <textarea name="feature" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">付属品	</p>
+              <p class="font-bold">付属品<label class="ml-7 font-normal">純正箱<input type="checkbox" name="original-box"></label><label class="ml-7 font-normal">無し<input type="checkbox" name="without-original-box"></label></p>
               <textarea name="accessory" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-emerald-200">
@@ -525,6 +525,27 @@
           appendText(dailyRateTextarea, quartzText);
         } else {
           removeText(dailyRateTextarea, quartzText);
+        }
+      });
+
+      const originalBoxCheckbox = document.querySelector('input[name="original-box"]');
+      const accessoryTextarea = document.querySelector('textarea[name="accessory"]');
+      const originalBoxText = "純正箱（外箱・内箱）";
+      originalBoxCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(accessoryTextarea, originalBoxText);
+        } else {
+          removeText(accessoryTextarea, originalBoxText);
+        }
+      });
+
+      const withoutOriginalBoxCheckbox = document.querySelector('input[name="without-original-box"]');
+      const withoutOriginalBoxText = "なし ※本体のみ販売";
+      withoutOriginalBoxCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(accessoryTextarea, withoutOriginalBoxText);
+        } else {
+          removeText(accessoryTextarea, withoutOriginalBoxText);
         }
       });
     </script>
