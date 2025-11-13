@@ -60,8 +60,25 @@ switch ($_POST['movement']) {
 <?php endif; ?>
 <?php if(!empty($_POST['sex'])): ?>
 【性別】
-<?php echo str_replace(array("\n"), '
-', $_POST['sex']); ?>
+<?php
+switch ($_POST['sex']) {
+    case "ladies-mens":
+        echo "レディース / メンズ";
+        break;
+    case "mens-ladies":
+        echo "メンズ / レディース";
+        break;
+    case "ladies":
+        echo "レディース";
+        break;
+    case "mens":
+        echo "メンズ";
+        break;
+    case "kids":
+        echo "キッズ";
+        break;
+}
+ ?>
 
 ------------------------
 <?php endif; ?>
