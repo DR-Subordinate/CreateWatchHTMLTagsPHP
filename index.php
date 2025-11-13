@@ -110,7 +110,7 @@
               <textarea name="sex" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-emerald-200">
-              <p class="font-bold">日差</p>
+              <p class="font-bold">日差<label class="ml-7 font-normal">規格範囲内<input type="checkbox" name="within-spec"></label><label class="ml-7 font-normal">計測（＋－）<input type="checkbox" name="measurement"></label><label class="ml-7 font-normal">電池式<input type="checkbox" name="quartz"></label></p>
               <textarea name="daily-rate" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black">
@@ -493,6 +493,38 @@
           appendText(featureTextarea, dateDisplayText);
         } else {
           removeText(featureTextarea, dateDisplayText);
+        }
+      });
+
+      const withinSpecCheckbox = document.querySelector('input[name="within-spec"]');
+      const dailyRateTextarea = document.querySelector('textarea[name="daily-rate"]');
+      const withinSpecText = "クロノメーター規格範囲内（-3秒～+8秒)";
+      withinSpecCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(dailyRateTextarea, withinSpecText);
+        } else {
+          removeText(dailyRateTextarea, withinSpecText);
+        }
+      });
+
+      const measurementCheckbox = document.querySelector('input[name="measurement"]');
+      const measurementText = `秒～秒
+※タイムグラファーでの計測の為、実際にご使用の際には姿勢差の関係により多少の前後がある場合がございます。`;
+      measurementCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(dailyRateTextarea, measurementText);
+        } else {
+          removeText(dailyRateTextarea, measurementText);
+        }
+      });
+
+      const quartzCheckbox = document.querySelector('input[name="quartz"]');
+      const quartzText = "日差なし（電池式）";
+      quartzCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(dailyRateTextarea, quartzText);
+        } else {
+          removeText(dailyRateTextarea, quartzText);
         }
       });
     </script>
