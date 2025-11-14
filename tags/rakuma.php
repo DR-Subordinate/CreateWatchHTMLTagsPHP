@@ -116,6 +116,10 @@ switch ($_POST['sex']) {
 点　検　　<?php echo str_replace(array("\n"), '
 　　　　　', $_POST['inspection']); ?>
 
+<?php endif; ?>
+<?php if(!empty($_POST['case-bezel'])): ?>
+ケース・ベゼル　　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['case-bezel']); ?>
 
 <?php endif; ?>
 <?php if(!empty($_POST['free-text-content'])): ?>
