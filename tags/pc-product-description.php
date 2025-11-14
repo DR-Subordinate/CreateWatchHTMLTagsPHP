@@ -270,6 +270,12 @@ switch ($_POST['condition']) {
 <td><?php echo nl2br($_POST['inspection']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['case-bezel'])): ?>
+<tr>
+<th>ケース・ベゼル</th>
+<td><?php echo nl2br($_POST['case-bezel']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 <table id="rankDesc">
