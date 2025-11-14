@@ -273,6 +273,12 @@ switch ($_POST['condition']) {
 <td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['case-back']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['crystal'])): ?>
+<tr>
+<th width="25%" bgcolor="#EBE8D7" align="center" style="padding:8px; border:#dddddd solid 1px; vertical-align: middle;">風防</th>
+<td width="75%" bgcolor="#FFFFFF" style="padding:8px; border:#dddddd solid 1px;"><?php echo nl2br($_POST['crystal']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 <table width="80%" id="rankDesc" bgcolor="#dddddd" cellspacing="1" cellpadding="5">
