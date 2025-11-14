@@ -294,6 +294,12 @@ switch ($_POST['condition']) {
 <td><?php echo nl2br($_POST['crown']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['bracelet-strap'])): ?>
+<tr>
+<th>ブレス・ベルト</th>
+<td><?php echo nl2br($_POST['bracelet-strap']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 <table id="rankDesc">
