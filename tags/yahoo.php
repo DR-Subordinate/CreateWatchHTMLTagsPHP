@@ -281,6 +281,18 @@ switch ($_POST['sex']) {
 </TD>
 </TR>
 <?php endif; ?>
+<?php if(!empty($_POST['case-bezel'])): ?>
+<TR>
+<TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
+<font size="3">ケース・ベゼル</font>
+</TD>
+<TD BGCOLOR=#ffffff>
+<font size="3">
+<?php echo nl2br($_POST['case-bezel']); ?>
+</font>
+</TD>
+</TR>
+<?php endif; ?>
 <?php if(!empty($_POST['staff-comment'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
