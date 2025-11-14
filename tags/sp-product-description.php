@@ -291,6 +291,12 @@ switch ($_POST['condition']) {
 <td bgcolor="#FFF"><?php echo nl2br($_POST['crystal']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['crown'])): ?>
+<tr>
+<td bgcolor="#EEE"><b>リューズ</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['crown']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 
