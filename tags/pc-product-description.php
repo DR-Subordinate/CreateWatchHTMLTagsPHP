@@ -288,6 +288,12 @@ switch ($_POST['condition']) {
 <td><?php echo nl2br($_POST['crystal']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['crown'])): ?>
+<tr>
+<th>リューズ</th>
+<td><?php echo nl2br($_POST['crown']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 <table id="rankDesc">
