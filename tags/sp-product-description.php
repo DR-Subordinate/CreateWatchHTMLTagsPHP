@@ -267,10 +267,10 @@ switch ($_POST['condition']) {
 <td bgcolor="#FFF"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['detail'])): ?>
+<?php if(!empty($_POST['inspection'])): ?>
 <tr>
-<td bgcolor="#EEE"><b>詳細</b></td>
-<td bgcolor="#FFF"><?php echo nl2br($_POST['detail']); ?></td>
+<td bgcolor="#EEE"><b>点検</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['inspection']); ?></td>
 </tr>
 <?php endif; ?>
 </table>
