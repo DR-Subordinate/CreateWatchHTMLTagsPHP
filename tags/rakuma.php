@@ -127,6 +127,11 @@ switch ($_POST['sex']) {
 　　　　　', $_POST['case-back']); ?>
 
 <?php endif; ?>
+<?php if(!empty($_POST['crystal'])): ?>
+風　防　　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['crystal']); ?>
+
+<?php endif; ?>
 <?php if(!empty($_POST['free-text-content'])): ?>
 <?php echo $_POST['free-text']; ?>　<?php echo $_POST['free-text-content']; ?>
 
