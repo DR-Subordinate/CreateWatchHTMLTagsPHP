@@ -233,6 +233,12 @@ switch ($_POST['condition']) {
 <td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['case-bezel']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['case-back'])): ?>
+<tr>
+<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;">裏蓋</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['case-back']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 <table id="rankDesc" width="100%" style="border-collapse:collapse;">
