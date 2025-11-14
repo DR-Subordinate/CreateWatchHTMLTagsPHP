@@ -221,10 +221,10 @@ switch ($_POST['condition']) {
 <td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['detail'])): ?>
+<?php if(!empty($_POST['inspection'])): ?>
 <tr>
-<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;">詳細</th>
-<td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['detail']); ?></td>
+<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;">点検</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['inspection']); ?></td>
 </tr>
 <?php endif; ?>
 </table>
