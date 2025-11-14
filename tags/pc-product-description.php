@@ -276,6 +276,12 @@ switch ($_POST['condition']) {
 <td><?php echo nl2br($_POST['case-bezel']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['case-back'])): ?>
+<tr>
+<th>裏蓋</th>
+<td><?php echo nl2br($_POST['case-back']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 <table id="rankDesc">
