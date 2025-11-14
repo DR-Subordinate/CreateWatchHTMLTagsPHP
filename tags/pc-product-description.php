@@ -264,10 +264,10 @@ switch ($_POST['condition']) {
 <td><?php echo nl2br($_POST['special-note']); ?></td>
 </tr>
 <?php endif; ?>
-<?php if(!empty($_POST['detail'])): ?>
+<?php if(!empty($_POST['inspection'])): ?>
 <tr>
-<th>詳細</th>
-<td><?php echo nl2br($_POST['detail']); ?></td>
+<th>点検</th>
+<td><?php echo nl2br($_POST['inspection']); ?></td>
 </tr>
 <?php endif; ?>
 </table>
