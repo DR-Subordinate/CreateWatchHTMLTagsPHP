@@ -147,10 +147,30 @@
               </select>
             </div>
             <div class="p-1 border-b border-black">
-              <p class="font-bold">詳細</p>
-              <textarea name="detail" cols="40" rows="2" class="border border-black"></textarea>
+              <p class="font-bold">点検<label class="ml-7 font-normal">オーバーホール済<input type="checkbox" name="overhauled"></label><label class="ml-7 font-normal">電池交換済<input type="checkbox" name="battery-replaced"></label></p>
+              <textarea name="inspection" cols="40" rows="2" class="border border-black"></textarea>
             </div>
             <div class="p-1 border-b border-black bg-emerald-200">
+              <p class="font-bold">ケース・ベゼル</p>
+              <textarea name="case-bezel" cols="40" rows="2" class="border border-black"></textarea>
+            </div>
+            <div class="p-1 border-b border-black">
+              <p class="font-bold">裏蓋</p>
+              <textarea name="case-back" cols="40" rows="2" class="border border-black"></textarea>
+            </div>
+            <div class="p-1 border-b border-black bg-emerald-200">
+              <p class="font-bold">風防</p>
+              <textarea name="crystal" cols="40" rows="2" class="border border-black"></textarea>
+            </div>
+            <div class="p-1 border-b border-black">
+              <p class="font-bold">リューズ</p>
+              <textarea name="crown" cols="40" rows="2" class="border border-black"></textarea>
+            </div>
+            <div class="p-1 border-b border-black bg-emerald-200">
+              <p class="font-bold">ブレス・ベルト</p>
+              <textarea name="bracelet-strap" cols="40" rows="2" class="border border-black"></textarea>
+            </div>
+            <div class="p-1 border-b border-black">
               <p class="font-bold">保証</p>
               <select name="warranty" class="border border-black">
                 <option value="" selected>選択してください</option>
@@ -158,23 +178,23 @@
                 <option value="six-months">中古品　6ヶ月</option>
               </select>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-emerald-200">
               <p class="font-bold">スタッフコメント</p>
               <textarea name="staff-comment" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black bg-emerald-200">
+            <div class="p-1 border-b border-black">
               <p class="font-bold">検索キーワード</p>
               <textarea name="search-word" cols="40" rows="2" class="border border-black"></textarea>
             </div>
-            <div class="p-1 border-b border-black">
+            <div class="p-1 border-b border-black bg-emerald-200">
               <input type="text" name="free-text" class="mb-1 border border-black">
               <input type="text" name="free-text-content" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-b border-black bg-emerald-200">
+            <div class="p-1 border-b border-black">
               <input type="text" name="free-text-2" class="mb-1 border border-black">
               <input type="text" name="free-text-content-2" size="40" class="border border-black">
             </div>
-            <div class="p-1 border-black">
+            <div class="p-1 border-black bg-emerald-200">
               <input type="text" name="free-text-3" class="mb-1 border border-black">
               <input type="text" name="free-text-content-3" size="40" class="border border-black">
             </div>
@@ -553,6 +573,27 @@
           appendText(accessoryTextarea, withoutOriginalBoxText);
         } else {
           removeText(accessoryTextarea, withoutOriginalBoxText);
+        }
+      });
+
+      const overhauledCheckbox = document.querySelector('input[name="overhauled"]');
+      const inspectionTextarea = document.querySelector('textarea[name="inspection"]');
+      const overhauledText = "オーバーホール済";
+      overhauledCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(inspectionTextarea, overhauledText);
+        } else {
+          removeText(inspectionTextarea, overhauledText);
+        }
+      });
+
+      const batteryReplacedCheckbox = document.querySelector('input[name="battery-replaced"]');
+      const batteryReplacedText = "電池交換済";
+      batteryReplacedCheckbox.addEventListener("change", e => {
+        if (e.target.checked) {
+          appendText(inspectionTextarea, batteryReplacedText);
+        } else {
+          removeText(inspectionTextarea, batteryReplacedText);
         }
       });
     </script>
