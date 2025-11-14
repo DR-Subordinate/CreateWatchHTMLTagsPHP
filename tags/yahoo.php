@@ -269,14 +269,14 @@ switch ($_POST['sex']) {
 </TD>
 </TR>
 <?php endif; ?>
-<?php if(!empty($_POST['detail'])): ?>
+<?php if(!empty($_POST['inspection'])): ?>
 <TR>
 <TD BGCOLOR=#dddddd ALIGN=center WIDTH=15%>
-<font size="3">詳　細</font>
+<font size="3">点　検</font>
 </TD>
 <TD BGCOLOR=#ffffff>
 <font size="3">
-<?php echo nl2br($_POST['detail']); ?>
+<?php echo nl2br($_POST['inspection']); ?>
 </font>
 </TD>
 </TR>
