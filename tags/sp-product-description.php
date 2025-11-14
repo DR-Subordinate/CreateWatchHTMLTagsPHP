@@ -285,6 +285,12 @@ switch ($_POST['condition']) {
 <td bgcolor="#FFF"><?php echo nl2br($_POST['case-back']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['crystal'])): ?>
+<tr>
+<td bgcolor="#EEE"><b>風防</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['crystal']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 
