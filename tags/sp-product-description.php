@@ -273,6 +273,12 @@ switch ($_POST['condition']) {
 <td bgcolor="#FFF"><?php echo nl2br($_POST['inspection']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['case-bezel'])): ?>
+<tr>
+<td bgcolor="#EEE"><b>ケース・ベゼル</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['case-bezel']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 
