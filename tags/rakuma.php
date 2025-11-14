@@ -137,6 +137,11 @@ switch ($_POST['sex']) {
 　　　　　', $_POST['crown']); ?>
 
 <?php endif; ?>
+<?php if(!empty($_POST['bracelet-strap'])): ?>
+ブレス・ベルト　　<?php echo str_replace(array("\n"), '
+　　　　　', $_POST['bracelet-strap']); ?>
+
+<?php endif; ?>
 <?php if(!empty($_POST['free-text-content'])): ?>
 <?php echo $_POST['free-text']; ?>　<?php echo $_POST['free-text-content']; ?>
 
