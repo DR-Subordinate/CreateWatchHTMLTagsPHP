@@ -251,6 +251,12 @@ switch ($_POST['condition']) {
 <td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['crown']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['bracelet-strap'])): ?>
+<tr>
+<th width="20%" bgcolor="#EBE8D7" style="padding:8px;border:#dddddd solid 1px;">ブレス・ベルト</th>
+<td width="80%" bgcolor="#ffffff" style="padding:8px;border:#dddddd solid 1px;"><?php echo nl2br($_POST['bracelet-strap']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 <table id="rankDesc" width="100%" style="border-collapse:collapse;">
