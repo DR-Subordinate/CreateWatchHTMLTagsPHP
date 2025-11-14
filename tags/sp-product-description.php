@@ -297,6 +297,12 @@ switch ($_POST['condition']) {
 <td bgcolor="#FFF"><?php echo nl2br($_POST['crown']); ?></td>
 </tr>
 <?php endif; ?>
+<?php if(!empty($_POST['bracelet-strap'])): ?>
+<tr>
+<td bgcolor="#EEE"><b>ブレス・ベルト</b></td>
+<td bgcolor="#FFF"><?php echo nl2br($_POST['bracelet-strap']); ?></td>
+</tr>
+<?php endif; ?>
 </table>
 <br>
 
