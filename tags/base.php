@@ -172,6 +172,13 @@ switch ($_POST['condition']) {
 
 ------------------------
 <?php endif; ?>
+<?php if(!empty($_POST['case-bezel'])): ?>
+【ケース・ベゼル】
+<?php echo str_replace(array("\n"), '
+', $_POST['case-bezel']); ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['staff-comment'])): ?>
 【スタッフコメント】
 <?php echo $_POST['staff-comment']; ?>
