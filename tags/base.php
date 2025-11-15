@@ -165,9 +165,10 @@ switch ($_POST['condition']) {
 
 <?php endif; ?>
 ------------------------
-<?php if(!empty($_POST['detail'])): ?>
-【詳　細】
-<?php echo $_POST['detail']; ?>
+<?php if(!empty($_POST['inspection'])): ?>
+【点　検】
+<?php echo str_replace(array("\n"), '
+', $_POST['inspection']); ?>
 
 ------------------------
 <?php endif; ?>
