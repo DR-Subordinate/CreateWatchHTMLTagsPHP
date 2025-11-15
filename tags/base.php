@@ -200,6 +200,13 @@ switch ($_POST['condition']) {
 
 ------------------------
 <?php endif; ?>
+<?php if(!empty($_POST['bracelet-strap'])): ?>
+【ブレス・ベルト】
+<?php echo str_replace(array("\n"), '
+', $_POST['bracelet-strap']); ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['staff-comment'])): ?>
 【スタッフコメント】
 <?php echo $_POST['staff-comment']; ?>
