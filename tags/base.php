@@ -193,6 +193,13 @@ switch ($_POST['condition']) {
 
 ------------------------
 <?php endif; ?>
+<?php if(!empty($_POST['crown'])): ?>
+【リューズ】
+<?php echo str_replace(array("\n"), '
+', $_POST['crown']); ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['staff-comment'])): ?>
 【スタッフコメント】
 <?php echo $_POST['staff-comment']; ?>
