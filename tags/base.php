@@ -186,6 +186,13 @@ switch ($_POST['condition']) {
 
 ------------------------
 <?php endif; ?>
+<?php if(!empty($_POST['crystal'])): ?>
+【風　防】
+<?php echo str_replace(array("\n"), '
+', $_POST['crystal']); ?>
+
+------------------------
+<?php endif; ?>
 <?php if(!empty($_POST['staff-comment'])): ?>
 【スタッフコメント】
 <?php echo $_POST['staff-comment']; ?>
