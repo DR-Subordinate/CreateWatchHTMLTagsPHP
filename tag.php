@@ -66,6 +66,14 @@
 
       <section class="lg:mx-auto mt-6">
         <div class="flex items-center gap-2 mb-2">
+          <h1 class="font-bold">ヤフー商品説明</h1>
+          <button onclick="copyToClipboard('yahoo-product-description', this)" class="px-2 py-1 text-sm bg-orange-500 text-white rounded hover:bg-orange-600">コピー</button>
+        </div>
+        <textarea name="yahoo-product-description" cols="48" rows="8" class="border border-black ms-gothic"><?php include('tags/yahoo-product-description.php'); ?></textarea>
+      </section>
+
+      <section class="lg:mx-auto mt-6">
+        <div class="flex items-center gap-2 mb-2">
           <h1 class="font-bold">ヤフショ＆ヤフオク用説明文(フリースペース1)</h1>
           <button onclick="copyToClipboard('yahoo-shopping-freespace-1', this)" class="px-2 py-1 text-sm bg-orange-500 text-white rounded hover:bg-orange-600">コピー</button>
         </div>
