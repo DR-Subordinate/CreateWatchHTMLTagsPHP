@@ -1,3 +1,5 @@
+✈️ We ship internationally
+
 <?php if(!empty($_POST['product-name'])): ?>
 【商品名】
 <?php echo $_POST['product-name']; ?>
